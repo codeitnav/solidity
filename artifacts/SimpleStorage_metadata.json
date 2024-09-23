@@ -14,7 +14,7 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "_favNum",
+						"name": "_favouriteNum",
 						"type": "uint256"
 					}
 				],
@@ -31,48 +31,36 @@
 						"type": "uint256"
 					}
 				],
-				"name": "listofPeople",
+				"name": "listOfPeople",
 				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "favNum",
-						"type": "uint256"
-					},
 					{
 						"internalType": "string",
 						"name": "name",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "FavoriteNumber",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "myFavNum",
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavouriteNumber",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myFriend",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "favNum",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -90,19 +78,6 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_favNum",
-						"type": "uint256"
-					}
-				],
-				"name": "store",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -118,7 +93,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"02simpleStorage_arrays_structs.sol": "SimpleStorage"
+			"03simpleStorage_mappings.sol": "SimpleStorage"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -132,12 +107,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"02simpleStorage_arrays_structs.sol": {
-			"keccak256": "0x18348b438f6d04eef3642f48c2bbd3a310750d6fc7bfd51589fbbee78697cf22",
+		"03simpleStorage_mappings.sol": {
+			"keccak256": "0xbdb45a201b37be58209f59b2c1d5539079497a1e8e019885fcaee3713e7a4f8a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://69eb36706a0ad8816e370d0c330143ef42fe48350786b5bfb822efa5eb42477d",
-				"dweb:/ipfs/QmZMa5s3CE4nHLKRToqnSKdU7r2sSA2Cnuknth6TWskHxN"
+				"bzz-raw://b474b9fd0e0ad492a65b4b1ff9af33ec4fc3b7591f8f7cc5a281ad56110772ee",
+				"dweb:/ipfs/QmQj9WomPEC13CdkS1uJfVSJsQW9MATqftc1tNQFxFpNMC"
 			]
 		}
 	},

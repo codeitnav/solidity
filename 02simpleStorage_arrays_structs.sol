@@ -38,8 +38,14 @@ contract SimpleStorage {
     /* e.g.: function addPerson(string calldata _name, uint256 _favNum) public {
         _name = "cat"; 
         listofPeople.push(Person({favNum: _favNum, name: _name}));
-    } ----> INVALID
-    
+    } ----> INVALID 
     */
+    
+    // only structs, strings and array needs to be given memory/calldata keyword
+
+    // storage - permanent variable that can be modified
+    // e.g.: myFavNum - we can store a num & then access it by clicking retrieve
+    // any variable createad outside the func but inside the contract is by default a storage variable
+
 
 }
