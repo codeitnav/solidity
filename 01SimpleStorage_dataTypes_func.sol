@@ -2,7 +2,7 @@
 pragma solidity ^0.8.26; //solidity version 
 
 contract SimpleStorage {
-    // Basic Types : boolean, uint (unsigned int- +ve whole num), int, address, bytes
+    // Basic Types : boolean, uint (unsigned int: +ve whole num), int, address, bytes
 
     bool hasFavNum = true; //variable
 

@@ -6,56 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_favouriteNum",
-						"type": "uint256"
-					}
-				],
-				"name": "addPerson",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "listOfPeople",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "FavoriteNumber",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"name": "nameToFavouriteNumber",
+				"inputs": [],
+				"name": "favNum",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -68,7 +20,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "retrieve",
+				"name": "retrieve1",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -77,6 +29,32 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_favNum",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -93,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"03simpleStorage_mappings.sol": "SimpleStorage"
+			"01SimpleStorage_dataTypes_func.sol": "SimpleStorage"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -107,12 +85,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"03simpleStorage_mappings.sol": {
-			"keccak256": "0xbdb45a201b37be58209f59b2c1d5539079497a1e8e019885fcaee3713e7a4f8a",
+		"01SimpleStorage_dataTypes_func.sol": {
+			"keccak256": "0x013566c5d97466f023dd91d473be2b4d0b80475c3f8c367b3aa3e7ed2f9dbaaa",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b474b9fd0e0ad492a65b4b1ff9af33ec4fc3b7591f8f7cc5a281ad56110772ee",
-				"dweb:/ipfs/QmQj9WomPEC13CdkS1uJfVSJsQW9MATqftc1tNQFxFpNMC"
+				"bzz-raw://f48660ef41de4677411234d64f8e24e145abb6ec8f2f91cbccd63f771171ecd7",
+				"dweb:/ipfs/QmXi6RoTL7Nz72iLo3ydLdKg2yeXtaiGuHuadczRKGhjUp"
 			]
 		}
 	},
