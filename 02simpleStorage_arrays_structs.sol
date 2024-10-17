@@ -46,6 +46,4 @@ contract SimpleStorage {
     // storage - permanent variable that can be modified
     // e.g.: myFavNum - we can store a num & then access it by clicking retrieve
     // any variable createad outside the func but inside the contract is by default a storage variable
-
-
 }

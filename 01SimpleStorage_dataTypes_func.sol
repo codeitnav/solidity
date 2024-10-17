@@ -4,7 +4,7 @@ pragma solidity ^0.8.26; //solidity version
 contract SimpleStorage {
     // Basic Types : boolean, uint (unsigned int: +ve whole num), int, address, bytes
 
-    bool hasFavNum = true; //variable
+    bool hasFavNum = true; // variable
 
     uint256 public favNum = 88; // uint has 256 bits
     // 256 is the max & default
