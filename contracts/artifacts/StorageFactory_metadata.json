@@ -86,19 +86,6 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "simpleStorage",
-				"outputs": [
-					{
-						"internalType": "contract SimpleStorage",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -137,11 +124,11 @@
 			]
 		},
 		"contracts/StorageFactory.sol": {
-			"keccak256": "0xe8a568a942d3b7484edf9d6a77933e9dd34eca8fbcaf0e83eb7d5eabec708179",
+			"keccak256": "0xa4026cc623a4736f7c3dcab2734c352118b4eda070a67337ed0247f3cfa8a91c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d29b5faf96acdc3fb145272afa3051a8431fa8c8809d23be18e8bce732eb6f51",
-				"dweb:/ipfs/QmNyMBbyMYj7PZGZGi2FgdLpKLRSqgfdESxa3TZFnUKrTu"
+				"bzz-raw://597f2984c64c3b12584cb634a7635b41c472672745fcd09d0107af5813893501",
+				"dweb:/ipfs/QmeLEHxKNgVW5mH1qGi6ToPUxMU1r3iFMrfBiAT2RHMj6x"
 			]
 		}
 	},

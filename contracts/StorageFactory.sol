@@ -2,20 +2,20 @@
 pragma solidity ^0.8.18;
 // while working with multiple files, keep the versions in all the file same
 
-import {SimpleStorage} from "./SimpleStorage.sol";
+import { SimpleStorage } from "./SimpleStorage.sol";
 
 
 contract StorageFactory{
 
     // SimpleStorage - referring to contract
     // simpleStorage - referring to variable
-    SimpleStorage public simpleStorage;
+    //SimpleStorage public simpleStorage;
     SimpleStorage[] public listOfContracts;
 
     address[] public listOfSimpleStorageAddresses;
 
     function createSimpleStorageContract() public {
-        simpleStorage = new SimpleStorage(); // new keyword : helps solidity in identifying to deploy the smart contract 
+        //simpleStorage = new SimpleStorage(); // new keyword : helps solidity in identifying to deploy the smart contract 
         SimpleStorage s = new SimpleStorage();
         listOfContracts.push(s);
     }
@@ -23,9 +23,9 @@ contract StorageFactory{
     // calling a specific func of the external SimpleStorage contract
     function sfStore(uint256 _simpleStorageIndex, uint256 _newSimpleStorageNum) public {
         // Address
-        // ABI : Application Binary Interface
+        // ABI : Application Binary Interface : The ABI will tell our code that how exactly it can interact with other contract
         //SimpleStorage mySimpleStorage = listOfContracts[_simpleStorageIndex];
-        SimpleStorage mySimpleStorage = SimpleStorage(listOfSimpleStorageAddresses[_simpleStorageIndex]);
+        SimpleStorage mySimpleStorage = listOfContracts[_simpleStorageIndex];
         mySimpleStorage.store(_newSimpleStorageNum);
     }
 

@@ -16,6 +16,9 @@ contract SimpleStorage {
     bytes32 favBytes32 = "cat"; // it'll get converted to something like 0x2kgdsi. 
     // bytes represent the hex of whatever mentioned
     // 32 is max but not default i.e. bytes and bytes32 is different
+    // Use cases: 1. Storing and manipulating binary data, such as images or encrypted data
+    // 2. Implementing cryptographic functions, such as hashing and signatures
+    // 3. Interacting with other contracts or off-chain systems that require binary data
 
     // all the data types have the default values
     // uint256 default value = 0
