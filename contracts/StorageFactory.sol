@@ -9,7 +9,7 @@ contract StorageFactory{
 
     // SimpleStorage - referring to contract
     // simpleStorage - referring to variable
-    //SimpleStorage public simpleStorage;
+    // SimpleStorage public simpleStorage;
     SimpleStorage[] public listOfContracts;
 
     address[] public listOfSimpleStorageAddresses;
@@ -24,7 +24,7 @@ contract StorageFactory{
     function sfStore(uint256 _simpleStorageIndex, uint256 _newSimpleStorageNum) public {
         // Address
         // ABI : Application Binary Interface : The ABI will tell our code that how exactly it can interact with other contract
-        //SimpleStorage mySimpleStorage = listOfContracts[_simpleStorageIndex];
+        // SimpleStorage mySimpleStorage = listOfContracts[_simpleStorageIndex];
         SimpleStorage mySimpleStorage = listOfContracts[_simpleStorageIndex];
         mySimpleStorage.store(_newSimpleStorageNum);
     }

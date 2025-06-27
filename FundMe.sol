@@ -11,8 +11,6 @@ contract FundMe {
         // using "payable" keyword make the contracts to be able to hold funds just like wallets
         // msg.value (unit) - number of wei sent with the message
         require(msg.value > 1e18, "didn't send enough ETH"); // 1e18 = 1 ETH = 100000000000000000 wei = 1 * 10 ** 18
-        
-
     }
 
     // function withdraw() public {}
